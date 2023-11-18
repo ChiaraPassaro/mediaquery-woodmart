@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+  background-color: rgb(150, 119, 168);
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 2rem 3rem 8rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  line-height: 2.6rem;
+}
+
+.header img {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 990px){
+  .header img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: -5rem auto 0;
+  gap: 2rem;
+}
+
+.service {
+  width: calc(25% - 2rem);
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.service .circle {
+  display: inline-block;
+  background-color:mediumpurple;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.service .circle img {
+  width: 100%;
+}
+
+.service p {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .service {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .service {
+    width: 100%;
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+  padding: 1rem;
+  border: 0;
+  border-radius: 2rem;
+  background-color: #28C0F1;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #2b96ba;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 3rem auto;
+}
+
+.welcome {
+  width: calc((100% / 3) - 2rem);
+  margin-bottom: 3rem;
+}
+
+.welcome h1, 
+.welcome p  {
+  margin-bottom: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.welcome h1 span {
+  color: #28C0F1;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: calc(100% / 3 * 2);
+}
+
+.service {
+  width: calc(50% - 2rem);
+  margin-bottom: 2rem;
+}
+.service div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.service div svg {
+  flex-shrink: 0;
+}
+
+.service div h1 {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.service p {
+  color: gray;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+
+@media screen and (max-width: 1168px) {
+  .welcome {
+    width: 100%;
+  }
+  .services {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service {
+    width: 100%;
+  }
+}
